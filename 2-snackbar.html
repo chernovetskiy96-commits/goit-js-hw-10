@@ -21,9 +21,31 @@
       href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
     />
     <title>Gallery</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/styles-CEcZN2RO.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DDMWMbUN.css">
+    <script type="module" crossorigin src="/vanilla-app-template/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/styles-ijwNIYse.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-BbSUbo7J.js">
   </head>
   <body>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+
   </body>
 </html>
