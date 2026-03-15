@@ -57,14 +57,17 @@ startBtn.addEventListener("click", () => {
     const now = Date.now();
     const diff = userSelectedDate - now;
 
-    if (diff <= 0) {
+   if (diff <= 0) {
 
-      clearInterval(intervalId);
+  clearInterval(intervalId);
 
-      updateClockface(0,0,0,0);
+  updateClockface(0,0,0,0);
 
-      return;
-    }
+  dateInput.disabled = false; 
+  startBtn.disabled = true;  
+
+  return;
+}
 
     const { days, hours, minutes, seconds } = convertMs(diff);
 
