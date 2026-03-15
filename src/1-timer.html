@@ -21,18 +21,13 @@
       href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="iziToast.min.css" />
     <title>Gallery</title>
   </head>
   <body>
     <div class="timer">
       <div class="controls">
-        <input
-          type="datetime-local"
-          id="js-input-date"
-          class="input-date js-input-date"
-        />
-        <button class="start-btn js-start-btn">Start</button>
+        <input type="text" id="datetime-picker" />
+        <button type="button" class="start-btn js-start-btn">Start</button>
       </div>
 
       <div class="clockface js-clockface">
@@ -58,6 +53,5 @@
       </div>
     </div>
     <script type="module" src="./js/1-timer.js"></script>
-    <script src="iziToast.min.js" type="text/javascript"></script>
   </body>
 </html>
