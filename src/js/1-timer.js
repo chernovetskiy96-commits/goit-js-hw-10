@@ -4,7 +4,7 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 
-const startBtn = document.querySelector('.js-start-btn');
+const startBtn = document.querySelector('.button');
 const dateInput = document.querySelector('#datetime-picker');
 
 const daysSpan = document.querySelector('[data-days]');
